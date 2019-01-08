@@ -1,0 +1,13 @@
+{
+  "name": "ultimaker.com-model-definitions",
+  "version": "0.0.1",
+  "description": "Model definitions for Ultimaker.com",
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json"
+  },
+  "author": "Etiënne van den Tempel <e.vandentempel@ultimaker.com>",
+  "license": "proprietary",
+  "devDependencies": {
+    "typescript": "^3.2.2"
+  }
+}
