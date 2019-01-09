@@ -3,11 +3,15 @@
   "version": "0.0.1",
   "description": "Model definitions for Ultimaker.com",
   "scripts": {
-    "tsc": "tsc -p tsconfig.json"
+    "tsc": "tsc -p tsconfig.json",
+    "tslint": "tslint './model/**/*.ts' --project './tsconfig.json'",
+    "tslint:fix": "tslint './model/**/*.ts' --project './tsconfig.json' --fix"
   },
   "author": "Etiënne van den Tempel <e.vandentempel@ultimaker.com>",
   "license": "UNLICENSED",
   "devDependencies": {
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.2",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1"
   }
 }

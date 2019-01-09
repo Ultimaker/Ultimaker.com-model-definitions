@@ -1,20 +1,37 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "noLib": false,
-    "allowSyntheticDefaultImports": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es6",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./"
-  },
-  "exclude": ["node_modules"],
-  "paths": {
-    "constants/*": ["./model/*"]
-  }
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": false,
+        "strict": true,
+        "target": "esnext",
+        "module": "es6",
+        "lib": [
+            "es2016",
+            "dom"
+        ],
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitReturns": true,
+        "noImplicitAny": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "paths": {
+            "@root/*": ["."],
+            "model/*": ["./model/*"],
+            "atoms/*": ["./model/atoms/*"],
+            "molecules/*": ["./model/molecules/*"],
+            "organisms/*": ["./model/organisms/*"]
+        }
+    },
+    "include": [
+        "model/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "build",
+    ]
 }
