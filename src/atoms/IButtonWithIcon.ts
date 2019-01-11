@@ -1,5 +1,5 @@
 import {IButton} from "./IButton";
 
-export class IButtonIcon extends IButton {
+export class IButtonWithIcon extends IButton {
     icon: string;
 }
