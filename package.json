@@ -1,12 +1,15 @@
 {
   "name": "ultimaker.com-model-definitions",
+  "license": "UNLICENSED",
   "version": "0.0.1",
   "description": "Model definitions for Ultimaker.com",
+  "private": true,
+  "repository": {
+    "url": "https://github.com/Ultimaker/Ultimaker.com-model-definitions"
+  },
   "scripts": {
     "tsc": "tsc -p tsconfig.json"
   },
-  "author": "Etiënne van den Tempel <e.vandentempel@ultimaker.com>",
-  "license": "UNLICENSED",
   "devDependencies": {
     "typescript": "^3.2.2"
   }
