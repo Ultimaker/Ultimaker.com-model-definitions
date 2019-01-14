@@ -1,4 +1,4 @@
-export abstract class ICta {
+export abstract class CtaInterface {
     label: string;
     url: string;
 }

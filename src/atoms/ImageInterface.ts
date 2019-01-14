@@ -1,4 +1,4 @@
-export class IImage {
+export class ImageInterface {
     url: string;
     alt: string;
 }
