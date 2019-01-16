@@ -8,9 +8,14 @@
     "url": "https://github.com/Ultimaker/Ultimaker.com-model-definitions"
   },
   "scripts": {
-    "tsc": "tsc -p tsconfig.json"
+    "tsc": "tsc -p tsconfig.json",
+    "lint": "tslint --project ."
   },
   "devDependencies": {
     "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1"
   }
 }
