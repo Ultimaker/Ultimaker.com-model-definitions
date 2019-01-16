@@ -1,4 +1,4 @@
-import {Cta} from "./Cta";
+import { Cta } from './Cta';
 
 export class ContentLink extends Cta {
     readonly icon?: string;
