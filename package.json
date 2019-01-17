@@ -1,9 +1,13 @@
 {
-  "name": "ultimaker.com-model-definitions",
+  "name": "@ultimaker/ultimaker.com-model-definitions",
   "license": "UNLICENSED",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Model definitions for Ultimaker.com",
-  "private": true,
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist/"
+  ],
   "repository": {
     "url": "https://github.com/Ultimaker/Ultimaker.com-model-definitions"
   },
@@ -12,10 +16,10 @@
     "lint": "tslint --project ."
   },
   "devDependencies": {
-    "typescript": "^3.2.2"
-  },
-  "dependencies": {
+    "typescript": "^3.2.2",
     "tslint": "^5.12.1",
     "tslint-config-airbnb": "^5.11.1"
+  },
+  "dependencies": {
   }
 }
