@@ -1,22 +1,22 @@
 import { OrganismInterface } from '../OrganismInterface';
-import { AutoCompleteField } from '../../molecules/fields/AutoCompleteField';
+import { CountryAutoCompleteField } from '../../molecules/fields/CountryAutoCompleteField';
 
-export abstract class PreferenceBar implements OrganismInterface {
+export class PreferenceBar implements OrganismInterface {
     readonly title: string;
-    readonly localeIntro: string;
+    readonly intro: string;
     readonly yourCountryLabel: string;
-    readonly countrySelect: AutoCompleteField;
+    readonly countrySelect: CountryAutoCompleteField;
     readonly yourPrivacySettingsLabel: string;
     readonly fullExperienceLabel: string;
     readonly customExperienceLabel: string;
     readonly functionalCookieLabel: string;
-    readonly functionalCookieDesc: string;
+    readonly functionalCookieDescription: string;
     readonly analyticsCookieLabel: string;
-    readonly analyticsCookieDesc: string;
+    readonly analyticsCookieDescription: string;
     readonly personalCookieLabel: string;
-    readonly personalCookieDesc: string;
+    readonly personalCookieDescription: string;
     readonly trackingCookieLabel: string;
-    readonly trackingCookieDesc: string;
-    readonly saveButton: string;
-    readonly closeButton: string;
+    readonly trackingCookieDescription: string;
+    readonly saveLabel: string;
+    readonly closeLabel: string;
 }

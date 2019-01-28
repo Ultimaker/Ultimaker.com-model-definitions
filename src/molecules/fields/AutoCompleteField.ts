@@ -1,4 +1,4 @@
-export class AutoCompleteField {
+export abstract class AutoCompleteField {
     readonly label: string;
     readonly placeholder: string;
     readonly highlightedLabel: string;
