@@ -5,6 +5,6 @@ import { OrganismInterface } from '../OrganismInterface';
 export abstract class Hero implements OrganismInterface {
     readonly title: string;
     readonly subtitle?: string;
-    readonly image: Image;
+    readonly image?: Image;
     readonly ctas?: CtaBlock;
 }
