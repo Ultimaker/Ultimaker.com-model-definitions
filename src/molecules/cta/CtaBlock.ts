@@ -1,5 +1,5 @@
 import { Cta } from '../../atoms/cta/Cta';
 
 export class CtaBlock {
-    readonly ctas: Cta[];
+    ctas: Cta[];
 }
