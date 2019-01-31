@@ -6,5 +6,5 @@ export abstract class Hero implements OrganismInterface {
     readonly title: string;
     readonly subtitle?: string;
     readonly image: Image;
-    readonly ctas: CtaBlock;
+    readonly ctas?: CtaBlock;
 }
