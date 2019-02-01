@@ -1,5 +1,6 @@
 import { Card } from './Card';
+import { Property } from '../../atoms/properties/Property';
 
 export class BusinessCard extends Card {
-    label?: string;
+    properties?: Property[];
 }
