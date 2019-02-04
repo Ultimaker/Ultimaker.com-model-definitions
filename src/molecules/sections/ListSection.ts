@@ -1,7 +1,7 @@
 import { Tooltip } from '../../atoms/tooltip/Tooltip';
 import { Card } from '../cards/Card';
 
-export class Section {
+export class ListSection {
     cards: Card[];
     title?: string;
     tooltip?: Tooltip;
