@@ -4,6 +4,6 @@ import { CraftImage } from '../../atoms/media/CraftImage';
 
 export class Card {
     title: string;
-    image: Image | CraftImage;
+    image?: Image | CraftImage;
     contentLink: ContentLink;
 }
