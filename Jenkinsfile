@@ -15,7 +15,7 @@ podTemplate(
     ),
     containerTemplate(
       name: 'node',
-      image: 'node:10.13.0',
+      image: 'node:10.15-alpine',
       command: 'cat',
       ttyEnabled: true
     )
