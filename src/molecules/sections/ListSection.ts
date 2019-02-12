@@ -1,10 +1,6 @@
 import { Tooltip } from '../../atoms/tooltip/Tooltip';
+import { Limit } from '../../atoms/limit/Limit';
 import { Card } from '../cards/Card';
-
-export interface Limit {
-	smallScreen?: number;
-	largeScreen?: number;
-}
 
 export class ListSection {
     cards: Card[];
