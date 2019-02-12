@@ -1,20 +1,32 @@
-#!/usr/bin/groovy
+#!usr/bin/env groovy
 
-@Library('k8s-jenkins-tools') _
-import com.ultimaker.Slug
-import com.ultimaker.Random
+// max length is 64 characters, UUID is 36
+String label = "jenkins-slave-${UUID.randomUUID().toString()}"
 
-def random = new Random()
-def podLabel = random.string(32)
+podTemplate(
+  label: label,
+  activeDeadlineSeconds: 900,
+  containers: [
+    containerTemplate(
+      name: 'jnlp',
+      image: 'eu.gcr.io/um-website-193311/jenkins/jnlp-slave',
+      args: '${computer.jnlpmac} ${computer.name}',
+      ttyEnabled: true
+    ),
+    containerTemplate(
+      name: 'node',
+      image: 'node:10.13.0',
+      command: 'cat',
+      ttyEnabled: true
+    )
+  ]
+) {
 
-podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
-  containerTemplate(name: 'node', image: 'node:10.13.0', ttyEnabled: true, command: 'cat')
-]) {
-  node("${podLabel}") {
-      def scmVars = checkout scm
-      def commitHash = scmVars.GIT_COMMIT
-      def repo = scmVars.GIT_URL.replaceAll('https://github.com/', '').replaceAll('.git', '')
+  node (label) {
 
+    try {
+
+      scm checkout
 
       stage('install dependencies') {
         container('node') {
@@ -22,14 +34,40 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
         }
       }
 
-      stage('verify code') {
-        parallel(
-          "lint code": {
-            container('node') {
-              sh 'npm run lint'
-            }
-          }
-        )
+      stage('validate code') {
+        container('node') {
+          sh 'npm run lint'
+        }
       }
+
+    } catch (e) {
+      // This will run if something goes wrong
+      currentBuild.result = 'FAILURE'
+
+      throw e
+    } finally {
+      // This will always run
+
+      def currentResult = currentBuild.result ?: 'SUCCESS'
+      def previousResult = currentBuild.previousBuild?.result
+
+      if (currentResult == 'UNSTABLE') {
+        // This will run only if the run was marked as unstable
+      }
+
+      if (currentResult == 'ABORTED') {
+        // This will run only if the run was aborted
+      }
+
+      if (currentResult == 'SUCCESS') {
+        // This will run only if the run was marked as success
+      }
+
+      if (previousResult != null && previousResult != currentResult) {
+        // This will run only if the state of the Pipeline has changed
+        // For example, if the Pipeline was previously failing but is now successful
+      }
+
+    } // try/catch/finally
   }
 }
