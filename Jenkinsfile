@@ -26,7 +26,7 @@ podTemplate(
 
     try {
 
-      scm checkout
+      checkout scm
 
       stage('install dependencies') {
         container('node') {
