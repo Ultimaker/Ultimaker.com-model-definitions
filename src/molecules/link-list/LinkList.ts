@@ -1,9 +1,8 @@
-import { Link } from '../../atoms/cta/Link';
-import { Limit } from '../../atoms/limit/Limit';
+import { Link } from 'atoms/link/Link';
 
 export class LinkList {
     lists?: LinkList[];
     links?: Link[];
-    limit?: Limit;
-    label?: string;
+    link: Link;
+    bottomLink?: Link;
 }
