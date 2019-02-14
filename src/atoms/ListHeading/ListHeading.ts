@@ -1,4 +1,4 @@
-export class Link {
+export class ListHeading {
     label: string;
     url?: string;
 }
