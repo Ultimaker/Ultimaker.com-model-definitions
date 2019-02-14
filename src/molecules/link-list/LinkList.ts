@@ -1,8 +1,8 @@
-import { Link } from 'atoms/link/Link';
+import { ListHeading } from 'atoms/ListHeading/ListHeading';
 
 export class LinkList {
     lists?: LinkList[];
-    links?: Link[];
-    link: Link;
-    bottomLink?: Link;
+    links?: ListHeading[];
+    link: ListHeading;
+    bottomLink?: ListHeading;
 }
