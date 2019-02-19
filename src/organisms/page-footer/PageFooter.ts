@@ -1,8 +1,8 @@
-import { LinkList } from '../../molecules/link-list/LinkList';
+import { NavigationItem } from '../../molecules/navigation-item/NavigationItem';
 import { CountryAutoCompleteField } from '../../molecules/fields/CountryAutoCompleteField';
 
 export class PageFooter {
-    navigation: LinkList[];
+    navigation: NavigationItem[];
     localeSelector: CountryAutoCompleteField;
-    legalNavigation: LinkList;
+    legalNavigation: NavigationItem[];
 }
