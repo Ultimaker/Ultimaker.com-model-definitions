@@ -3,5 +3,5 @@ export abstract class AutoCompleteField {
     placeholder: string;
     highlightedLabel: string;
     suggestionsLabel: string;
-    datasource: Map<string, string>;
+    datasource: Map<string, string | object>;
 }
