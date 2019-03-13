@@ -1,6 +1,7 @@
 import { Tooltip } from '../../atoms/tooltip/Tooltip';
 import { Limit } from '../../atoms/limit/Limit';
 import { Card } from '../cards/Card';
+import { AnalyticalEvent } from '../../events/AnalyticalEvent';
 
 export class ListSection {
     cards: Card[];
@@ -8,4 +9,5 @@ export class ListSection {
     tooltip?: Tooltip;
     limit?: Limit;
     showAllLabel?: string;
+    clickEvent?: AnalyticalEvent;
 }
