@@ -1,11 +1,11 @@
 import { Tooltip } from '../../atoms/tooltip/Tooltip';
 import { Limit } from '../../atoms/limit/Limit';
 import { Card } from '../cards/Card';
-import { Expand } from './Expand';
+import { ContentButton } from '../../atoms/cta/ContentButton';
 
 export class ListSection {
     cards: Card[];
-    expand?: Expand;
+    expand?: ContentButton;
     limit?: Limit;
     title?: string;
     tooltip?: Tooltip;
