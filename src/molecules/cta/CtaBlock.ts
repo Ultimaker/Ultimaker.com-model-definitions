@@ -1,5 +1,6 @@
-import { Cta } from '../../atoms/cta/Cta';
+import { ContentButton } from '../../atoms/cta/ContentButton';
+import { ContentLink } from '../../atoms/cta/ContentLink';
 
 export class CtaBlock {
-    ctas: Cta[];
+    ctas: (ContentButton | ContentLink)[];
 }
