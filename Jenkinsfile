@@ -40,6 +40,26 @@ podTemplate(
         }
       }
 
+      stage('check prebuilt files') {
+        container('node') {
+          sh 'du dist > prebuilt.txt'
+        }
+      }
+
+      stage('build code') {
+        container('node') {
+          sh 'rm -rf dist'
+          sh 'npm run tsc'
+          sh 'du dist > built.txt'
+        }
+      }
+
+      stage('compare prebuilt & built files') {
+        container('node') {
+          sh 'diff prebuilt.txt built.txt'
+        }
+      }
+
     } catch (e) {
       // This will run if something goes wrong
       currentBuild.result = 'FAILURE'
