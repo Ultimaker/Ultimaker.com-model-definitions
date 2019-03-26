@@ -1,5 +1,4 @@
 import { AnalyticalEvent } from '../../events/AnalyticalEvent';
-import { ContentLink } from '../../atoms/cta/ContentLink';
 import { CraftImage } from '../../atoms/media/CraftImage';
 import { Image } from '../../atoms/media/Image';
 
