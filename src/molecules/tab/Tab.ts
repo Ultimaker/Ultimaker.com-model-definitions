@@ -1,4 +1,4 @@
-import { ContentGeneral } from '../ContentGeneral/ContentGeneral';
+import { ContentGeneral } from '../contentGeneral/ContentGeneral';
 
 export class Tab  {
     label: string;
