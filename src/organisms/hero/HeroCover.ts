@@ -1,6 +1,6 @@
 import { Hero } from './Hero';
-import { ResponsiveImage } from '../../atoms/media/ResponsiveImage';
+import { Image } from '../../atoms/media/Image';
 
 export class HeroCover extends Hero {
-    image?: ResponsiveImage;
+    image?: Image;
 }
