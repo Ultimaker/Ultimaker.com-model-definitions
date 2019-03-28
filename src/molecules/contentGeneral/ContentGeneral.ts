@@ -6,5 +6,5 @@ export class ContentGeneral {
     description: string;
     image: Image;
     ctas: CtaBlock;
-    reversed?: boolean;
+    reversed: boolean;
 }
