@@ -4,7 +4,7 @@ import { CtaBlock } from '../cta/CtaBlock';
 export class ContentGeneral {
     title: string;
     description: string;
-    image: Image;
+    image?: Image;
     ctas: CtaBlock;
     reversed: boolean;
 }
