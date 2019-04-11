@@ -17,9 +17,9 @@
     "lint:fix": "tslint --fix --project ."
   },
   "devDependencies": {
-    "typescript": "^3.2.2",
-    "tslint": "^5.12.1",
-    "tslint-config-airbnb": "^5.11.1"
+    "tslint": "^5.15.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.4.3"
   },
   "dependencies": {}
 }
