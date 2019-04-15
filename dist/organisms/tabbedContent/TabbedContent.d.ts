@@ -6,4 +6,5 @@ export declare class TabbedContent implements OrganismInterface {
     subtitle?: string;
     tabs: Tab[];
     ctas?: CtaBlock;
+    sequenced?: boolean;
 }
