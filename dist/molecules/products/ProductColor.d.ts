@@ -1,7 +1,7 @@
 import { Image } from '../../atoms/media/Image';
-import { TransparencyLevel } from './TransparencyLevel';
+import { OpacityLevel } from './OpacityLevel';
 export declare class ProductColor {
     rgbHex: string;
-    transparency: TransparencyLevel;
+    opacity: OpacityLevel;
     exampleImage: Image;
 }
