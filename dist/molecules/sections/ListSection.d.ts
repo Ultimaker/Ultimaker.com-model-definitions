@@ -4,7 +4,10 @@ import { BusinessCard } from '../cards/BusinessCard';
 import { ContentBlock } from '../blocks/ContentBlock';
 import { ContentButton } from '../../atoms/cta/ContentButton';
 import { CardProduct } from '../cards/CardProduct';
-export declare class ListSection {
+import { Limitable } from '../../atoms/limit/Limitable';
+import { Expandable } from '../../atoms/limit/Expandable';
+import { Tooltippable } from '../../atoms/tooltip/Tooltippable';
+export declare class ListSection implements Limitable, Expandable, Tooltippable {
     cards: BusinessCard[] | ContentBlock[] | CardProduct[];
     expand?: ContentButton;
     limit?: Limit;

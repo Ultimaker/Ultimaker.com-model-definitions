@@ -1,5 +1,6 @@
 import { ContentButton } from '../cta/ContentButton';
-export declare class Limit {
+import { Expandable } from './Expandable';
+export declare class Limit implements Expandable {
     smallScreen?: number;
     largeScreen?: number;
     expand?: ContentButton;
