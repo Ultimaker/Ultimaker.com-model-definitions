@@ -8,6 +8,7 @@ export class Brands implements OrganismInterface {
     items: Brand[];
     title: string;
     ctas?: CtaBlock;
+    // @Deprecated expand will become part of limit
     expand?: ContentButton;
     limit?: Limit;
     subtitle?: string;
