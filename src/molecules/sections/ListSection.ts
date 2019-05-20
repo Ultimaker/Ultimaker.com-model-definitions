@@ -7,6 +7,7 @@ import { CardProduct } from '../cards/CardProduct';
 
 export class ListSection {
     cards: BusinessCard[] | ContentBlock[] | CardProduct[];
+    // @Deprecated expand will become part of limit
     expand?: ContentButton;
     limit?: Limit;
     title?: string;
