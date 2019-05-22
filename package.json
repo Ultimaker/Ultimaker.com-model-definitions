@@ -12,7 +12,7 @@
     "url": "https://github.com/Ultimaker/Ultimaker.com-model-definitions"
   },
   "scripts": {
-    "tsc": "tsc -p tsconfig.json",
+    "tsc": "rm -Rf dist/ && tsc -p tsconfig.json",
     "lint": "tslint --project .",
     "lint:fix": "tslint --fix --project ."
   },
