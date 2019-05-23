@@ -10,7 +10,7 @@ import { Tooltippable } from '../../atoms/tooltip/Tooltippable';
 
 export class ListSection implements Limitable, Expandable, Tooltippable {
     cards: BusinessCard[] | ContentBlock[] | CardProduct[];
-    // @Deprecated expand will become part of limit
+    // @Deprecated expand will become part of limit, refactor design components
     expand?: ContentButton;
     limit?: Limit;
     title?: string;
