@@ -1,6 +1,7 @@
 import { Tooltip } from '../../atoms/tooltip/Tooltip';
 import { ContentLink } from '../../atoms/cta/ContentLink';
-export declare class TabTableRow {
+import { Tooltippable } from '../../atoms/tooltip/Tooltippable';
+export declare class TabTableRow implements Tooltippable {
     label: string;
     tooltip?: Tooltip;
     value?: string;
