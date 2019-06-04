@@ -1,5 +1,3 @@
 import { Cta } from './Cta';
 
-export class SubmitButton extends Cta{
-
-}
+export class SubmitButton extends Cta{}
