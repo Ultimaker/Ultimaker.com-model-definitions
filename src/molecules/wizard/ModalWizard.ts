@@ -1,7 +1,6 @@
-import { OrganismInterface } from '../../organisms/OrganismInterface';
 import { WizardStepInterface } from './WizardStepInterface';
 
-export class ModalWizard implements OrganismInterface {
+export class ModalWizard {
     title: string;
     steps: WizardStepInterface[];
 }
