@@ -4,6 +4,7 @@ import { CardDownload } from '../cards/CardDownload';
 export declare class WizardStepDownloadList implements WizardStepInterface {
     title: string;
     subtitle?: string;
+    description?: string;
     items: CardDownload[];
     submitButton: SubmitButton;
 }
