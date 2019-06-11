@@ -1,7 +1,7 @@
 #!usr/bin/env groovy
 
 // max length is 64 characters, UUID is 36
-String label = "jenkins-slave-${UUID.randomUUID().toString()}"
+String label = "model-definitions-${UUID.randomUUID().toString()}"
 
 podTemplate(
   label: label,
