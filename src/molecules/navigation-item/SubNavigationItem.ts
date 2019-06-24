@@ -1,6 +1,7 @@
 import { Image } from '../../atoms/media/Image';
-import { NavigationItem } from './NavigationItem';
 
-export class SubNavigationItem extends NavigationItem{
+export class SubNavigationItem {
     image?: Image;
+    label: string;
+    url: string;
 }
