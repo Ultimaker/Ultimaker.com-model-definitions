@@ -1,8 +1,8 @@
-import { NavigationItem } from '../../molecules/navigation-item/NavigationItem';
 import { ContentLink } from '../../atoms/cta/ContentLink';
 import { Search } from '../../molecules/search/Search';
+import { MainNavigationItem } from '../../molecules/navigation-item/MainNavigationItem';
 export declare class PageHeader {
-    navigation: NavigationItem[];
+    navigation: MainNavigationItem[];
     cta: ContentLink;
     search: Search;
 }
