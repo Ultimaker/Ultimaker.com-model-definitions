@@ -1,6 +1,6 @@
 import { CountryAutoCompleteField } from '../../molecules/fields/CountryAutoCompleteField';
-import { LegalNavigationCategory } from '../../molecules/navigation-item/LegalNavigationCategory';
-import { FooterNavigationCategory } from '../../molecules/navigation-item/FooterNavigationCategory';
+import { LegalNavigationCategory } from '../../molecules/navigation/LegalNavigationCategory';
+import { FooterNavigationCategory } from '../../molecules/navigation/FooterNavigationCategory';
 
 export class PageFooter {
     navigation: FooterNavigationCategory[];
