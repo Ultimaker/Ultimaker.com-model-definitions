@@ -1,4 +1,4 @@
-import { SubNavigationItem } from '../../molecules/navigation-item/SubNavigationItem';
+import { SubNavigationItem } from '../../molecules/navigation/SubNavigationItem';
 export declare class SubNavigation {
     items: SubNavigationItem[];
 }
