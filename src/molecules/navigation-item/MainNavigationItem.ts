@@ -1,6 +1,6 @@
-import { NavigationCategory } from './NavigationCategory';
 import { NavigationItem } from './NavigationItem';
+import { MainNavigationCategory } from './MainNavigationCategory';
 
 export class MainNavigationItem extends NavigationItem{
-    childCategories?: NavigationCategory[];
+    categories?: MainNavigationCategory[];
 }
