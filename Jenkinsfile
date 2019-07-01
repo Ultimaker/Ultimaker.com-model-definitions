@@ -24,9 +24,9 @@ podTemplate(
 
   node (label) {
 
-    try {
+    checkout scm
 
-      checkout scm
+    try {
 
       stage('install dependencies') {
         container('node') {
@@ -61,33 +61,15 @@ podTemplate(
       }
 
     } catch (e) {
-      // This will run if something goes wrong
+
       currentBuild.result = 'FAILURE'
 
+      slackSend color: 'danger',
+        channel: '#ci-builds',
+        message: "Build failed: model-definitions ${env.BRANCH_NAME} (<${env.BUILD_URL}|Job>)"
+
       throw e
-    } finally {
-      // This will always run
 
-      def currentResult = currentBuild.result ?: 'SUCCESS'
-      def previousResult = currentBuild.previousBuild?.result
-
-      if (currentResult == 'UNSTABLE') {
-        // This will run only if the run was marked as unstable
-      }
-
-      if (currentResult == 'ABORTED') {
-        // This will run only if the run was aborted
-      }
-
-      if (currentResult == 'SUCCESS') {
-        // This will run only if the run was marked as success
-      }
-
-      if (previousResult != null && previousResult != currentResult) {
-        // This will run only if the state of the Pipeline has changed
-        // For example, if the Pipeline was previously failing but is now successful
-      }
-
-    } // try/catch/finally
+    }
   }
 }
