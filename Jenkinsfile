@@ -66,7 +66,7 @@ podTemplate(
 
       slackSend color: 'danger',
         channel: '#ci-builds',
-        message: "Failure while building *model-definitions* branch \"${env.BRANCH_NAME}\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> )."
+        message: "Build failed: model-definitions ${env.BRANCH_NAME} (<${env.BUILD_URL}|Job>)"
 
       throw e
 
