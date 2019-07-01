@@ -7,9 +7,10 @@ import { CardProduct } from '../cards/CardProduct';
 import { Limitable } from '../../atoms/limit/Limitable';
 import { Expandable } from '../../atoms/limit/Expandable';
 import { Tooltippable } from '../../atoms/tooltip/Tooltippable';
+import { CardArticle } from '../cards/CardArticle';
 
 export class ListSection implements Limitable, Expandable, Tooltippable {
-    cards: BusinessCard[] | ContentBlock[] | CardProduct[];
+    cards: BusinessCard[] | ContentBlock[] | CardProduct[] | CardArticle[];
     // @Deprecated expand will become part of limit, refactor design components
     expand?: ContentButton;
     limit?: Limit;
