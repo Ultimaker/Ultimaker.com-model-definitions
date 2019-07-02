@@ -1,6 +1,6 @@
 import { NavigationItem } from './NavigationItem';
 
-export abstract class NavigationCategory{
+export class NavigationCategory{
     label: string;
     items?: NavigationItem[];
 }
