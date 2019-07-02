@@ -1,8 +1,8 @@
 import { CountryAutoCompleteField } from '../../molecules/fields/CountryAutoCompleteField';
-import { LegalNavigationCategory } from '../../molecules/navigation/LegalNavigationCategory';
-import { FooterNavigationCategory } from '../../molecules/navigation/FooterNavigationCategory';
+import { NavigationItem } from '../../molecules/navigation/NavigationItem';
+import { NavigationCategory } from '../../molecules/navigation/NavigationCategory';
 export declare class PageFooter {
-    navigation: FooterNavigationCategory[];
+    navigation: NavigationCategory[];
     localeSelector: CountryAutoCompleteField;
-    legalNavigation: LegalNavigationCategory;
+    legalNavigation: NavigationItem[];
 }
