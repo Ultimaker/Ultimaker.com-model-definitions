@@ -4,4 +4,5 @@ export declare class Limit implements Expandable {
     smallScreen?: number;
     largeScreen?: number;
     expand?: ContentButton;
+    expandAmount?: number;
 }
