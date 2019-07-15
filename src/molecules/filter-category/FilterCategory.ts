@@ -1,4 +1,4 @@
-import { Label } from '../label/Label';
+import { Label } from '../../atoms/label/Label';
 
 export class FilterCategory {
     labels: Label[];
