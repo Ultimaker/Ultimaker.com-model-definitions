@@ -1,9 +1,11 @@
-import { OrganismInterface } from '../OrganismInterface';
 import { CtaBlock } from '../../molecules/cta/CtaBlock';
+import { FilterCategory } from '../../molecules/filter-category/FilterCategory';
 import { ListSection } from '../../molecules/sections/ListSection';
+import { OrganismInterface } from '../OrganismInterface';
 export declare class Overview implements OrganismInterface {
-    title: string;
-    subtitle?: string;
-    sections: ListSection[];
     ctas?: CtaBlock;
+    filter?: FilterCategory[];
+    sections: ListSection[];
+    subtitle?: string;
+    title: string;
 }
