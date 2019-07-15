@@ -2,6 +2,6 @@ import { Label } from '../../atoms/label/Label';
 
 export class FilterCategory {
     labels: Label[];
-    showAll: string;
+    showAllLabel: string;
     title: string;
 }
