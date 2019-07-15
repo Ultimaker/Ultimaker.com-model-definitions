@@ -1,4 +1,4 @@
-import { FilterCategory } from '../../atoms/filter-category/FilterCategory';
+import { FilterCategory } from '../filter-category/FilterCategory';
 
 export class Filter {
     categories: FilterCategory[];
