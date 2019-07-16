@@ -8,10 +8,12 @@ import { Limitable } from '../../atoms/limit/Limitable';
 import { Expandable } from '../../atoms/limit/Expandable';
 import { Tooltippable } from '../../atoms/tooltip/Tooltippable';
 import { CardArticle } from '../cards/CardArticle';
+import { FilterCategory } from '../filter-category/FilterCategory';
 export declare class ListSection implements Limitable, Expandable, Tooltippable {
     cards: BusinessCard[] | ContentBlock[] | CardProduct[] | CardArticle[];
     expand?: ContentButton;
     limit?: Limit;
     title?: string;
     tooltip?: Tooltip;
+    filter?: FilterCategory[];
 }
