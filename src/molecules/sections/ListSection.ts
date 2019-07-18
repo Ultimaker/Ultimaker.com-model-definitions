@@ -17,5 +17,5 @@ export class ListSection implements Limitable, Expandable, Tooltippable {
     limit?: Limit;
     title?: string;
     tooltip?: Tooltip;
-    filter?: FilterCategory[];
+    filterCategories?: FilterCategory[];
 }
