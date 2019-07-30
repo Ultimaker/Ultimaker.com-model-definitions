@@ -3,4 +3,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class DescriptionList {
 }
 exports.DescriptionList = DescriptionList;
-//# sourceMappingURL=DescriptionList.js.map
+//# sourceMappingURL=ArticleDescriptionList.js.map
