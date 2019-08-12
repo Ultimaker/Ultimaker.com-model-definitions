@@ -4,8 +4,8 @@ import { SubNavigation } from './organisms/sub-navigation/SubNavigation';
 import { NotificationInterface } from './molecules/notifications/NotificationInterface';
 
 export class Page {
-    notifications?: NotificationInterface[];
     meta: Meta;
-    subNavigation?: SubNavigation;
     organisms: OrganismInterface[];
+    notifications?: NotificationInterface[];
+    subNavigation?: SubNavigation;
 }
