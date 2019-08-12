@@ -8,4 +8,5 @@ export class Page {
     organisms: OrganismInterface[];
     notifications?: NotificationInterface[];
     subNavigation?: SubNavigation;
+    language?: string;
 }
