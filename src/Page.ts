@@ -1,10 +1,12 @@
 import { OrganismInterface } from './organisms/OrganismInterface';
 import { Meta } from './Meta';
 import { SubNavigation } from './organisms/sub-navigation/SubNavigation';
+import { Notification} from './molecules/notification/Notification';
 
 export class Page {
     meta: Meta;
-    subNavigation?: SubNavigation;
     organisms: OrganismInterface[];
     language?: string;
+    notifications?: Notification[];
+    subNavigation?: SubNavigation;
 }
