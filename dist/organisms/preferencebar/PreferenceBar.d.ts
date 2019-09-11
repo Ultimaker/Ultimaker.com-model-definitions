@@ -18,4 +18,5 @@ export declare class PreferenceBar implements OrganismInterface {
     trackingCookieDescription: string;
     saveLabel: string;
     closeLabel: string;
+    language?: string;
 }
