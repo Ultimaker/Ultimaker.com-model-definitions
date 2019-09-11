@@ -5,4 +5,5 @@ export declare class Page {
     meta: Meta;
     subNavigation?: SubNavigation;
     organisms: OrganismInterface[];
+    language?: string;
 }

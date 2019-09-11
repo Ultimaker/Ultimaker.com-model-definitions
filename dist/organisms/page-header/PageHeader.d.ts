@@ -5,4 +5,5 @@ export declare class PageHeader {
     navigation: MainNavigationItem[];
     cta: ContentLink;
     search: Search;
+    language?: string;
 }

@@ -6,4 +6,5 @@ export declare class PageFooter {
     navigation: NavigationCategory[];
     localeSelector: CountryAutoCompleteField;
     legalNavigation: NavigationItem[];
+    language?: string;
 }
