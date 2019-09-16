@@ -8,12 +8,6 @@ podTemplate(
   activeDeadlineSeconds: 900,
   containers: [
     containerTemplate(
-      name: 'jnlp',
-      image: 'eu.gcr.io/um-website-193311/jenkins/jnlp-slave',
-      args: '${computer.jnlpmac} ${computer.name}',
-      ttyEnabled: true
-    ),
-    containerTemplate(
       name: 'node',
       image: 'node:10.15-alpine',
       command: 'cat',
@@ -66,7 +60,7 @@ podTemplate(
 
       slackSend color: 'danger',
         channel: '#ci-builds',
-        message: "Build failed: model-definitions ${env.BRANCH_NAME} (<${env.BUILD_URL}|Job>)"
+        message: at
 
       throw e
 
