@@ -1,7 +1,8 @@
 #!usr/bin/env groovy
 
-// max length is 64 characters, UUID is 36
-String label = "model-definitions-${UUID.randomUUID().toString()}"
+@Library('k8s-jenkins-tools') _
+
+String label = generateLabel('model-definitions')
 
 podTemplate(
   label: label,
@@ -9,8 +10,9 @@ podTemplate(
   containers: [
     containerTemplate(
       name: 'node',
-      image: 'node:10.15-alpine',
+      image: 'eu.gcr.io/um-website-193311/ultimaker.com/node:latest',
       command: 'cat',
+      alwaysPullImage: true,
       ttyEnabled: true
     )
   ]
@@ -23,24 +25,32 @@ podTemplate(
     try {
 
       stage('install dependencies') {
+        STAGE_NAME = env.STAGE_NAME
+
         container('node') {
           sh 'npm ci'
         }
       }
 
       stage('validate code') {
+        STAGE_NAME = env.STAGE_NAME
+
         container('node') {
           sh 'npm run lint'
         }
       }
 
       stage('check prebuilt files') {
+        STAGE_NAME = env.STAGE_NAME
+
         container('node') {
           sh 'du dist > prebuilt.txt'
         }
       }
 
       stage('build code') {
+        STAGE_NAME = env.STAGE_NAME
+
         container('node') {
           sh 'rm -rf dist'
           sh 'npm run tsc'
@@ -49,6 +59,8 @@ podTemplate(
       }
 
       stage('compare prebuilt & built files') {
+        STAGE_NAME = env.STAGE_NAME
+
         container('node') {
           sh 'diff prebuilt.txt built.txt'
         }
@@ -58,9 +70,13 @@ podTemplate(
 
       currentBuild.result = 'FAILURE'
 
-      slackSend color: 'danger',
-        channel: '#ci-builds',
-        message: at
+      buildFailure(
+        env.BUILD_URL,
+        'Model Definitions',
+        'Ultimaker.com-model-definitions',
+        env.BRANCH_NAME,
+        STAGE_NAME
+      )
 
       throw e
 
