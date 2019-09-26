@@ -1,1 +1,1 @@
-export class AnalyticalEventData{ [key:string]:string|boolean|number; }
+export class AnalyticalEventData{ [key:string]:string|string[]|boolean|number; }
