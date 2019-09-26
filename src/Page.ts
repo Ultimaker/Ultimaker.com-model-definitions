@@ -7,8 +7,8 @@ import { Notification } from './molecules/notification/Notification';
 export class Page {
     meta: Meta;
     organisms: OrganismInterface[];
-    loadEvent: AnalyticalEvent;
     language?: string;
+    loadEvent?: AnalyticalEvent;
     notifications?: Notification[];
     subNavigation?: SubNavigation;
 }
