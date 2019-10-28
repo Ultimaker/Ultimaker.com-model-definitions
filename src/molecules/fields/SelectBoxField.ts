@@ -1,4 +1,4 @@
-export abstract class SelectBoxField {
+export class SelectBoxField {
     label: string;
     placeholder: string;
     datasource: { [key: string]: string; };
