@@ -4,7 +4,7 @@ import { ContentLink } from '../../atoms/cta/ContentLink';
 import { Product } from '../../molecules/products/Product';
 export declare class HeroProduct extends Hero {
     description: string;
-    products: Product[];
+    products?: Product[];
     image?: Image;
     linkList?: ContentLink[];
     subtitle?: string;
