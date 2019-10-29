@@ -1,5 +1,6 @@
 import { Field } from './Field';
 
 export class ComboBoxField extends Field {
-    datasource: {[key:string]:string; };
+    datasource: { [key: string]: string; };
+    notFoundLabel: string;
 }
