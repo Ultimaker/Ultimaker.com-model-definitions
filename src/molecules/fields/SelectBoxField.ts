@@ -1,5 +1,5 @@
-export class SelectBoxField {
-    label: string;
-    placeholder: string;
+
+import { Field } from './Field';
+export class SelectBoxField extends Field {
     datasource: { [key: string]: string; };
 }
