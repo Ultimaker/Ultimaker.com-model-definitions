@@ -1,6 +1,3 @@
-import { SelectBoxField } from './SelectBoxField';
+import { ComboBoxField } from './ComboBoxField';
 
-export class CountrySelectBoxField extends SelectBoxField {
-    highlightedLabel: string;
-    suggestionsLabel: string;
-}
+export class CountrySelectBoxField extends ComboBoxField {}
