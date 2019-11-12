@@ -1,13 +1,11 @@
 import { OrganismInterface } from '../OrganismInterface';
-import { CountryAutoCompleteField } from '../../molecules/fields/CountryAutoCompleteField';
-import { LocaleAutoCompleteField } from '../../molecules/fields/LocaleAutoCompleteField';
+import { ComboBoxField } from '../../molecules/fields/ComboBoxField';
 
 export class PreferenceBar implements OrganismInterface {
     title: string;
     intro: string;
     yourCountryLabel: string;
-    countrySelect: CountryAutoCompleteField;
-    localeSelect: LocaleAutoCompleteField;
+    countrySelect: ComboBoxField;
     yourPrivacySettingsLabel: string;
     fullExperienceLabel: string;
     customExperienceLabel: string;

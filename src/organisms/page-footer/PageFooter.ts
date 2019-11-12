@@ -1,13 +1,13 @@
-import { CountryAutoCompleteField } from '../../molecules/fields/CountryAutoCompleteField';
-import { LocaleAutoCompleteField } from '../../molecules/fields/LocaleAutoCompleteField';
+import { ComboBoxField } from '../../molecules/fields/ComboBoxField';
+import { SelectBoxField } from '../../molecules/fields/SelectBoxField';
 import { NavigationItem } from '../../molecules/navigation/NavigationItem';
 import { NavigationCategory } from '../../molecules/navigation/NavigationCategory';
 
 export class PageFooter {
     copyrightLabel: string;
     navigation: NavigationCategory[];
-    countrySelector: CountryAutoCompleteField;
-    localeSelector: LocaleAutoCompleteField;
+    countrySelector: ComboBoxField;
+    localeSelector: SelectBoxField;
     legalNavigation: NavigationItem[];
     language?: string;
 }
