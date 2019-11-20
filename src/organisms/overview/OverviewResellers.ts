@@ -3,4 +3,5 @@ import { Overview } from './Overview';
 
 export class OverviewResellers extends Overview {
     countrySelector: ComboBoxField;
+    noResultsMessage?: string;
 }
