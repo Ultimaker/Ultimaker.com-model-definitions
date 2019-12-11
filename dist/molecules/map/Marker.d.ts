@@ -1,4 +1,4 @@
-import { BusinessCard } from '../../../molecules/cards/BusinessCard';
+import { BusinessCard } from '../cards/BusinessCard';
 export declare class Marker {
     latitude: number;
     longitude: number;
