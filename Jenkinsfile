@@ -32,14 +32,6 @@ podTemplate(
         }
       }
 
-      stage('validate code') {
-        STAGE_NAME = env.STAGE_NAME
-
-        container('node') {
-          sh 'npm run lint'
-        }
-      }
-
       stage('check prebuilt files') {
         STAGE_NAME = env.STAGE_NAME
 
