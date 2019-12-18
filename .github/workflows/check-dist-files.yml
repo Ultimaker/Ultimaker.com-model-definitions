@@ -1,0 +1,32 @@
+name: Check dist files
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install
+        run: |
+          npm ci
+      - name: check prebuilt files
+        run: |
+          du dist > prebuilt.txt
+      - name: build code
+        run: |
+          rm -rf dist
+          npm run tsc
+          du dist > built.txt
+      - name: compare prebuilt with built files
+        run: |
+          diff prebuilt.txt built.txt
