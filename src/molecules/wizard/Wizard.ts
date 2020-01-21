@@ -1,6 +1,6 @@
 import { WizardStepInterface } from './WizardStepInterface';
 
-export class ModalWizard {
+export class Wizard {
     title: string;
     steps: WizardStepInterface[];
 }
