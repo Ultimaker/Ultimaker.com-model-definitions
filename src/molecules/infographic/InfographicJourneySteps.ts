@@ -1,5 +1,6 @@
+import { Component } from '../../Component';
 import { InfographicJourneyStep } from './InfographicJourneyStep';
 
-export class InfographicJourneySteps {
+export class InfographicJourneySteps implements Component {
     steps: InfographicJourneyStep[];
 }
