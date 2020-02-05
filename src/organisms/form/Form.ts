@@ -1,7 +1,13 @@
+import { Fieldset } from './Fieldset';
+import { Heading } from '../../atoms/heading/Heading';
+import { InputHidden } from './InputHidden';
 import { OrganismInterface } from '../OrganismInterface';
-import { FormField } from './FormField';
+import { Paragraph } from '../../atoms/paragraph/Paragraph';
 
 export class Form implements OrganismInterface {
-    id: string;
-    fields: FormField[];
+    action: string;
+    fieldsets?: Fieldset[];
+    hiddenFields?: InputHidden[];
+    id?: string;
+    method: string;
 }
