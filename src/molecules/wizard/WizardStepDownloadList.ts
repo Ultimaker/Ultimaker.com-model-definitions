@@ -1,8 +1,8 @@
-import { WizardStepInterface } from './WizardStepInterface';
 import { SubmitButton } from '../../atoms/button/SubmitButton';
 import { CardDownload } from '../cards/CardDownload';
+import { Component } from '../../Component';
 
-export class WizardStepDownloadList implements WizardStepInterface{
+export class WizardStepDownloadList implements Component {
     title: string;
     subtitle?: string;
     description?: string;

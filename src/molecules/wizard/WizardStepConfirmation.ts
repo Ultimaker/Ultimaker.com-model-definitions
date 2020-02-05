@@ -1,8 +1,8 @@
-import { WizardStepInterface } from './WizardStepInterface';
 import { Image } from '../../atoms/media/Image';
+import { Component } from '../../Component';
 import { CtaBlock } from '../cta/CtaBlock';
 
-export class WizardStepConfirmation implements WizardStepInterface {
+export class WizardStepConfirmation implements Component {
     title: string;
     subtitle?: string;
     contentTitle: string;
