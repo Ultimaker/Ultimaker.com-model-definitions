@@ -1,11 +1,11 @@
+import { Submit } from './Submit';
+import { Select } from './Select';
+import { Input } from './Input';
 import { FormFieldValidation } from './FormFieldValidation';
 
 export class FormField {
-    id: string;
-    name: string;
-    label: string;
-    // datatype
-    // value
-    // fieldType
-    validations: FormFieldValidation[];
+    field: Input | Select | Submit;
+    instructions?: string;
+    label?: string;
+    validations?: FormFieldValidation[];
 }
