@@ -1,6 +1,6 @@
-import { WizardStepInterface } from './WizardStepInterface';
+import { Component } from '../../Component';
 
 export class Wizard {
     title: string;
-    steps: WizardStepInterface[];
+    steps: Component[];
 }
