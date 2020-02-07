@@ -6,5 +6,6 @@ import { ArticleCtas } from '../../molecules/article/ArticleCtas';
 import { ArticleVideo } from '../../molecules/article/ArticleVideo';
 import { ArticleDescriptionList } from '../../molecules/article/ArticleDescriptionList';
 export declare class ArticleContent implements OrganismInterface {
+    displaySocialIcons: boolean;
     molecules: [ArticleIntro | ArticleText | ArticleImage | ArticleCtas | ArticleVideo | ArticleDescriptionList];
 }
