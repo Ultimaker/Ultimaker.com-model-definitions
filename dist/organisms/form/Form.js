@@ -1,3 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-//# sourceMappingURL=WizardStepInterface.js.map
+class Form {
+}
+exports.Form = Form;
+//# sourceMappingURL=Form.js.map
