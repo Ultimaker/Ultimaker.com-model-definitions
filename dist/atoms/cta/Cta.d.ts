@@ -1,5 +1,6 @@
 import { AnalyticalEvent } from '../../events/AnalyticalEvent';
-export declare abstract class Cta {
+import { Component } from '../../Component';
+export declare abstract class Cta implements Component {
     clickEvent?: AnalyticalEvent;
     icon?: string;
     label: string;
