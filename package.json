@@ -1,7 +1,7 @@
 {
   "name": "@ultimaker/ultimaker.com-model-definitions",
   "license": "UNLICENSED",
-  "version": "3.4.0",
+  "version": "4.0.0",
   "description": "Model definitions for Ultimaker.com",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
