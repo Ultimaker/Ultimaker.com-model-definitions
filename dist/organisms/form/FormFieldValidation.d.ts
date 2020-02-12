@@ -3,4 +3,5 @@ export declare class FormFieldValidation {
     flags?: string;
     pattern: string;
     regex?: RegExp;
+    validationType: string;
 }
