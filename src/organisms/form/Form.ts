@@ -1,13 +1,14 @@
 import { Component } from '../../Component';
 import { Fieldset } from './Fieldset';
-import { Input } from './Input';
-import { Select } from './Select';
+import { FormField } from './FormField';
+import { InputHidden } from './InputHidden';
 import { Submit } from './Submit';
 
 export class Form implements Component {
     action: string;
-    fields?: (Input | Select | Submit)[];
+    fields?: (FormField | Submit)[];
     fieldsets?: Fieldset[];
+    hiddenFields?: InputHidden[];
     id?: string;
     method: string;
 }
