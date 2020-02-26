@@ -1,5 +1,5 @@
 export class AppLink {
     name: string;
-    type: 'internal' | 'external';
+    applicationType: 'internal' | 'external';
     url: string;
 }
