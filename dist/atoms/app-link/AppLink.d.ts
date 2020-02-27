@@ -1,5 +1,4 @@
-export declare class AppLink {
-    name: string;
+import { Link } from '../link/Link';
+export declare class AppLink extends Link {
     applicationType: 'internal' | 'external';
-    url: string;
 }
