@@ -5,6 +5,7 @@ import { InputHidden } from './InputHidden';
 import { Submit } from './Submit';
 export declare class Form implements Component {
     action: string;
+    analyticsIdentifier?: string;
     fields?: (FormField | Submit)[];
     fieldsets?: Fieldset[];
     hiddenFields?: InputHidden[];
