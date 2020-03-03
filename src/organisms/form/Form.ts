@@ -6,6 +6,7 @@ import { Submit } from './Submit';
 
 export class Form implements Component {
     action: string;
+    analyticsIdentifier?: string;
     fields?: (FormField | Submit)[];
     fieldsets?: Fieldset[];
     hiddenFields?: InputHidden[];
