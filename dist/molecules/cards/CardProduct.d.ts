@@ -1,5 +1,7 @@
 import { Card } from './Card';
 export declare class CardProduct extends Card {
-    url: string;
+    description?: string;
     properties?: string[];
+    subtitle?: string;
+    url: string;
 }
