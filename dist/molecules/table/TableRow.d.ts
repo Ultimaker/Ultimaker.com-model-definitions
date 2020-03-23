@@ -1,7 +1,8 @@
 import { Tooltip } from '../../atoms/tooltip/Tooltip';
 import { ComparisonTableCell } from './ComparisonTableCell';
 export declare class TableRow {
-    label: string;
+    content: string;
+    label?: string;
     tooltip?: Tooltip;
     cells: ComparisonTableCell[];
 }
