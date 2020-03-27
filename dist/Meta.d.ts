@@ -8,5 +8,6 @@ export declare class Meta {
     canonical: Canonical;
     hreflang?: Hreflang[];
     image?: Image;
+    robots?: string;
     structuredData?: WithContext<Thing>[];
 }
