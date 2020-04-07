@@ -6,6 +6,5 @@ export declare class FlyoutItem {
     description?: Paragraph;
     heading: Heading;
     link: Link;
-    url: string;
     tag?: Tag;
 }
