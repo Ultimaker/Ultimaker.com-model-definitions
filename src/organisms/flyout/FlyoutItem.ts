@@ -7,6 +7,5 @@ export class FlyoutItem {
     description?: Paragraph;
     heading: Heading;
     link: Link;
-    url: string; // @todo: remove when integration service and nuxt are deployed using link
     tag?: Tag;
 }
