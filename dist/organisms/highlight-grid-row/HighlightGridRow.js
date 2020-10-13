@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class InfographicJourney {
+class HighlightGridRow {
 }
-exports.InfographicJourney = InfographicJourney;
+exports.HighlightGridRow = HighlightGridRow;
 //# sourceMappingURL=HighlightGridRow.js.map
