@@ -1,8 +1,7 @@
-import { OrganismInterface } from '../OrganismInterface';
 import { Component } from '../../Component';
 import { ContentGeneral } from 'molecules/contentGeneral/ContentGeneral';
 
-export class HighlightGridRow implements OrganismInterface, Component {
+export class HighlightGridRow implements Component {
     title: string;
     elements: ContentGeneral[];
 }
