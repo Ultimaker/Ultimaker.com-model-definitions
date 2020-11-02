@@ -1,6 +1,6 @@
 import { OrganismInterface } from '../OrganismInterface';
 import { Component } from '../../Component';
-import { HighlightGridRow } from 'molecules/highlight-grid-row/HighlightGridRow';
+import { HighlightGridRow } from '../../molecules/highlight-grid-row/HighlightGridRow';
 export declare class HighlightGrid implements OrganismInterface, Component {
     title: string;
     elements: HighlightGridRow[];
