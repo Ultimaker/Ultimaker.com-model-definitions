@@ -1,6 +1,6 @@
 import { Component } from '../../Component';
-import { ContentGeneral } from 'molecules/contentGeneral/ContentGeneral';
+import { HighlightGridBlock } from '../highlight-grid-block/HighlightGridBlock';
 export declare class HighlightGridRow implements Component {
     title: string;
-    elements: ContentGeneral[];
+    elements: HighlightGridBlock[];
 }
