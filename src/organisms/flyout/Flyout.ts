@@ -7,5 +7,5 @@ export class Flyout {
     image: Image;
     items: FlyoutItem[];
     link?: Link;
-    menuHighlight: MenuHighlight;
+    menuHighlight?: MenuHighlight;
 }
