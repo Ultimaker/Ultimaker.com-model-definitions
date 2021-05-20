@@ -1,6 +1,6 @@
 import { Cta } from './Cta';
 
 export class ContentButton extends Cta {
-    primaryButton: boolean;
+    buttonStyle: 'primary' | 'secondary';
     url?: string;
 }
