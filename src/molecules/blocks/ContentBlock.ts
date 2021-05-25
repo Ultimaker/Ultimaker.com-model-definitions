@@ -8,4 +8,5 @@ export class ContentBlock {
     description: string;
     image?: Image;
     cta?: ContentButton | ContentLink | YoutubeLink;
+    caption?: string;
 }
