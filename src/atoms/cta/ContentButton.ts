@@ -1,6 +1,11 @@
 import { Cta } from './Cta';
 
+export enum ButtonStyle {
+    primary = 'primary',
+    secondary = 'secondary',
+}
+
 export class ContentButton extends Cta {
-    buttonStyle: 'primary' | 'secondary';
+    buttonStyle: ButtonStyle;
     url?: string;
 }
