@@ -5,6 +5,7 @@ import { YoutubeLink } from '../../atoms/cta/YoutubeLink';
 
 export class ContentBlock {
     title: string;
+    subtitle?: string;
     description: string;
     image?: Image;
     cta?: ContentButton | ContentLink | YoutubeLink;
