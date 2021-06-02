@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Image = exports.FocusArea = void 0;
 var FocusArea;
 (function (FocusArea) {
     FocusArea["center"] = "";
