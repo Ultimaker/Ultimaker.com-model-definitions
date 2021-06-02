@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.HeadingVariantEnum = void 0;
 var HeadingVariantEnum;
 (function (HeadingVariantEnum) {
     HeadingVariantEnum["h1"] = "h1";
