@@ -4,6 +4,6 @@ export declare enum ButtonStyle {
     secondary = "secondary"
 }
 export declare class ContentButton extends Cta {
-    buttonStyle?: ButtonStyle;
+    buttonStyle: ButtonStyle;
     url?: string;
 }
