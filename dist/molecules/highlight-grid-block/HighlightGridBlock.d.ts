@@ -5,6 +5,6 @@ export declare class HighlightGridBlock {
     title: string;
     description: string;
     image: Image;
-    cta: ContentLink | ContentButton;
+    cta?: ContentLink | ContentButton;
     reversed: boolean;
 }
